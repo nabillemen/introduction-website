@@ -1,0 +1,9 @@
+{{ range .Site.Params.publication.list }}
+<p>
+  {{ .date }} &middot; {{ .authors }} &middot;
+  <a href="{{ .link }}"
+    ><i>"{{ .title }}"</i></a
+  >
+  {{ .journal }}
+</p>
+{{ end }}

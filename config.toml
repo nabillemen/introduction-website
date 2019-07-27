@@ -1,0 +1,192 @@
+baseURL = "http://example.org/"
+languageCode = "fr-fr"
+theme = "aafu"
+
+[params]
+    title = "Nabil Lemenuel"
+    author = "Nabil Lemenuel"
+    description = "Parcours profesionnelle de Nabil Lemenuel"
+    copyright = ""
+    
+    [params.theme]
+        allowToggle = true
+        mainTheme = "light"
+        altTheme = "dark"
+
+   [params.favicons]
+        use = true
+        metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Nabil Lemenuel"
+        tagline = "SEO @TBEE"
+        location = "Paris, FR"
+        photo = "profile.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-linkedin-in"
+            url = "https://fr.linkedin.com/in/nabil-lemenuel"
+            title = "LinkedIn"		
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-twitter"
+            url = "https://twitter.com/nlemenuel"
+            title = "Twitter"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-facebook"
+            url = "https://facebook.com/nabil.lemenuel"
+            title = "Facebook"
+
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    [[params.showInAccordion]]
+        item = "experience"
+    [[params.showInAccordion]]
+        item = "education"
+    [[params.showInAccordion]]
+        item = "skill"
+    [[params.showInAccordion]]
+        item = "hobby"
+
+    [params.aboutme]
+        title = "En bref"
+        icon = "fas fa-user"
+        description = "**Consultant SEO en devenir**. Actuellement étudiant du bootcamp SEO THE BRIDGE École-Entreprises. Passioné du web et du marketing digital."
+
+    # Experience section
+    [params.experience]
+        title = "Experiences"
+        icon = "fas fa-briefcase"
+
+        [[params.experience.list]]
+            position = "Revendeur Amazon"
+            dates = "Juin 2018 - Décembre 2018"
+            company = "À mon compte"
+            details = "Sourcing, achat et revente de produits sur la marketplace Amazon."
+        [[params.experience.list]]
+            position = "Développeur Web"
+            dates = "Février 2018 - Juin 2018"
+            link = "http://ateliersduroi.com/"
+            company = "Les Ateliers du R.O.I."
+            details = "Travail en groupe et en autonomie sur plusieurs projets client d’application web (gamification, animation au sein d’une communauté de collaborateurs), front-end et back-end."
+        [[params.experience.list]]
+            position = "Agent de Maintenance (en alternance)"
+            dates = "Septembre 2014 - Juillet /2016"
+            link = "https://www.orano.group/"
+            company = "Orano"
+            details = "Maintien du bon fonctionnement du parc informatique industrielle sur l’ensemble de l’usine (intervention, maintenance préventive, sauvegarde des systèmes, archivage des données issues de l’exploitation)."
+
+    # Education section
+    [params.education]
+        title = "Éducation"
+        icon = "fas fa-graduation-cap"
+
+        [[params.education.list]]
+            degree = "Responsable SEO"
+            college = "THE BRIDGE École-Entreprises"
+            dates = "Septembre 2019 - Juin 2020"
+        [[params.education.list]]
+            degree = "Développeur d’applications web back-end PHP/Symfony"
+            college = "OpenClassrooms"
+            dates = "Août 2017 - Février 2018"
+        [[params.education.list]]
+            degree = "Cycle Ingénieur Techniques de l'Information (1ère année)"
+            college = "École Supérieure d'Ingénieurs de Rennes"
+            dates = "Septembre 2016 - Juin 2017"
+        [[params.education.list]]
+            degree = "DUT Génie Électrique et Informatique Industrielle"
+            college = "IUT de Cherbourg"
+            dates = "Septembre 2014 - Juin 2016"
+
+    # Publication section
+    [params.publication]
+        title = "Publications"
+        icon = "fas fa-book"
+
+        [[params.publication.list]]
+            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            authors = "F Last, F Second, P secondary"
+            date = "2018"
+            journal = "Journal of Field 52 (16), 9033-9044"
+            link = "#"
+        [[params.publication.list]]
+            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            authors = "F Last, F Second, P secondary"
+            date = "2018"
+            journal = "Journal of Field 52 (16), 9033-9044"
+            link = "#"
+        [[params.publication.list]]
+            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            authors = "F Last, F Second, P secondary"
+            date = "2018"
+            journal = "Journal of Field 52 (16), 9033-9044"
+            link = "#"
+
+    # Project section
+    [params.project]
+        title = "Projects"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "project"
+            url = "#"
+            description = "Description of the project"
+        [[params.project.list]]
+            title = "project"
+            url = "#"
+            description = "Description of the project"
+        [[params.project.list]]
+            title = "project"
+            url = "#"
+            description = "Description of the project"
+        [[params.project.list]]
+            title = "project"
+            url = "#"
+            description = "Description of the project"            
+
+    # Skill section
+    [params.skill]
+        title = "Compétences"
+        panelId = "skill-panel"
+        icon = "fas fa-cogs"
+
+        [[params.skill.list]]
+            skill = "SEO"
+            skillrating = 90
+        [[params.skill.list]]
+            skill = "Gestion de projet"
+            skillrating = 90
+        [[params.skill.list]]
+            skill = "Développement Web"
+            skillrating = 80
+        [[params.skill.list]]
+            skill = "Data Science"
+            skillrating = 50
+
+    # Hobby section
+    [params.hobby]
+        title = "Loisirs"
+        icon = "fas fa-gamepad"
+
+        [[params.hobby.list]]		
+            hobby = "Lecture"
+        [[params.hobby.list]]		
+            hobby = "Tennis"
+        [[params.hobby.list]]		
+            hobby = "Randonnée"
